@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+:root {
+  --color-background: #FFFFFF;
+  --color-background-secondary: #F3F3F3;
+  --color-font-primary: #000000;
+  --color-font-secondary: #979FA0;
+  --color-blue: #009BE9;
+  --color-green: #8CC928;
+
+  --font-h1: 50px;
+  --font-h2: 18px;
+  --font-body: 15px;
+
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-roboto);
+  font-size: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-font-primary);
+}
+
+h1 {
+  font-size: var(--font-h1);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: var(--font-h2);
+  font-weight: 500;
+}
+
+p,
+span,
+label,
+input,
+textarea,
+button {
+  font-size: var(--font-body);
+  font-weight: 400;
+}
+
+.bg-secondary {
+  background-color: var(--color-background-secondary);
+}
+
+.btn {
+  padding: 12px 48px 12px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn-green {
+  background-color: var(--color-green);
+  color: white;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.4s ease-out forwards;
+}
